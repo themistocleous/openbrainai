@@ -186,11 +186,12 @@ function App() {
             <span className="animate-in" style={{ animationDelay: '0.2s' }}>Brain</span>
             <span className="animate-in" style={{ animationDelay: '0.4s' }}> AI</span>
           </h1>
+          <div>
+        </div>
           <h2>
           <span className="animate-in" style={{ animationDelay: '0.8s' }}> version 2</span>
           </h2>
           <p className="animate-in" style={{ animationDelay: '0.6s' }}>A dynamic academic platform providing AI tools and resources to support the work of clinicians, educators, and researchers.</p>
-          <p className="animate-in" style={{ animationDelay: '0.6s' }}>The Open Brain AI version 1 is currently sleeping. We are transitioning into Open Brain AI v.2 (expected release day May 15, 2025) </p>
 <p className="animate-in text-gray-700 dark:text-gray-300 leading-relaxed" style={{ animationDelay: '0.6s' }}>
   Developed by{" "}
   <a
@@ -243,6 +244,20 @@ function App() {
       </div>
 
       <main>
+      <section className="release-banner">
+  <div className="banner-content">
+    <h2>Open Brain AI 2 — Launching Soon!</h2>
+    <p>
+      A brand-new codebase, fully accessible and free to run. HIPAA & GDPR compliant, with local processing and API integration for developers.
+    </p>
+    <p>
+      The current version of Open Brain AI is now hibernating after months of incredible traffic and community use. We’re so excited about what’s coming next!
+    </p>
+    <div className="banner-bottom">
+      <span className="release-date">📅 Release Date: May 15, 2025</span>
+    </div>
+  </div>
+</section>
         <section id="home" className="section-container">
           <div className="card">
             <div className="card-content">
@@ -307,7 +322,7 @@ function App() {
         <div className="about-image">
           <div className="image-placeholder">
             <div className="inner-shape">
-            <img src="/assets/obai-editor.png" alt="editor-preview"  style={{ maxWidth: '300%' }} />
+            <img src={`${import.meta.env.BASE_URL}assets/logo.png`} alt="editor-preview"  style={{ maxWidth: '90%' }} />
             </div>
           </div>
         </div>
@@ -389,7 +404,7 @@ function App() {
           <div className="portfolio-image">
             {/* You'll likely replace this with an actual image */}
             <div className="image-placeholder">
-            <img src="/assets/measures-demo.png" alt="measures-demo"  style={{ maxWidth: '100%' }} />
+            <img src={`${import.meta.env.BASE_URL}assets/measures-demo.png`} alt="measures-demo"  style={{ maxWidth: '100%' }} />
              {/*   <i className="fas fa-brain fa-3x"></i>  */}
             </div>
             <div className="image-overlay">
@@ -403,7 +418,7 @@ function App() {
         <div className="portfolio-item">
           <div className="portfolio-image">
             <div className="image-placeholder">
-            <img src="/assets/measures-demo.png" alt="measures-demo"  style={{ maxWidth: '100%' }} />
+            <img src={`${import.meta.env.BASE_URL}assets/measures-demo.png`} alt="measures-demo"  style={{ maxWidth: '100%' }} />
               {/*   <i className="fas fa-file-medical fa-3x"></i>  */}
             </div>
             <div className="image-overlay">
@@ -417,7 +432,7 @@ function App() {
         <div className="portfolio-item">
           <div className="portfolio-image">
             <div className="image-placeholder">
-            <img src="/assets/measures-demo.png" alt="measures-demo"  style={{ maxWidth: '100%' }} />
+            <img src={`${import.meta.env.BASE_URL}assets/measures-demo.png`} alt="measures-demo"  style={{ maxWidth: '100%' }} />
                 {/*               <i className="fas fa-language fa-3x"></i> */}
             </div>
             <div className="image-overlay">
@@ -431,7 +446,7 @@ function App() {
         <div className="portfolio-item">
           <div className="portfolio-image">
             <div className="image-placeholder">
-            <img src="/assets/measures-demo.png" alt="measures-demo"  style={{ maxWidth: '100%' }} />
+            <img src={`${import.meta.env.BASE_URL}assets/measures-demo.png`} alt="measures-demo"  style={{ maxWidth: '100%' }} />
                  {/* <i className="fas fa-user-md fa-3x"></i> */}
             </div>
             <div className="image-overlay">
@@ -445,7 +460,7 @@ function App() {
         <div className="portfolio-item">
           <div className="portfolio-image">
             <div className="image-placeholder">
-            <img src="/assets/measures-demo.png" alt="measures-demo"  style={{ maxWidth: '100%' }} />           
+            <img src={`${import.meta.env.BASE_URL}assets/measures-demo.png`} alt="measures-demo"  style={{ maxWidth: '100%' }} />           
                   {/* <i className="fas fa-book-reader fa-3x"></i> */}
             </div>
             <div className="image-overlay">

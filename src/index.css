@@ -9,7 +9,7 @@
   /* Default Light Theme Colors */
   --primary-color: #2A6AC6;     /* Rich blue - main brand color */
   --primary-dark: #1B4E94;      /* Darker blue for hover states */
-  --secondary-color: #6FCF97;   /* Soft green for accents */
+  --secondary-color:  #2A6AC6;   /* Rich blue - consistency */
   --accent-color: #F2994A;      /* Warm orange for highlights */
   --dark-color: #333333;        /* Dark gray for text */
   --light-color: #FFFFFF;       /* White */
@@ -158,6 +158,11 @@ body {
   bottom: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: calc(var(--border-radius-md) - 5px);
+
+  /* Center content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Services Section */
@@ -1042,4 +1047,55 @@ h2::after {
 .affiliation-banner img {
   max-height: 40px;
   object-fit: contain;
+}
+
+.release-banner {
+  background: linear-gradient(to right, #4f46e5, #6366f1);
+  color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 960px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.release-banner h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.release-banner p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.banner-bottom {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.release-date {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
