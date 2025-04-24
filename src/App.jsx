@@ -200,7 +200,7 @@ function App() {
     target="_blank"
     
   >
-    <i>Charalambos (Haris) Themistocleous</i>
+    <i>Dr. Haris Themistocleous</i>
   </a>,{" "}
   <a
     href="https://www.uv.uio.no/isp/english/"
@@ -242,7 +242,6 @@ function App() {
           <div className="shape shape-3"></div>
         </div>
       </div>
-
       <main>
       <section className="release-banner">
   <div className="banner-content">
